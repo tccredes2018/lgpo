@@ -1,0 +1,152 @@
+body{
+  width: 100vw;
+  overflow-x: hidden;
+  height: auto;
+  position:absolute;
+	top:0;
+	left:0;
+  bottom: 0;
+  right: 0;
+}
+.lgpoStyle-controlaDimensoes{
+    width: 300px;
+}
+.lgpoStyle-body{
+  width: 100vw;
+  height: 100vh;
+/*  background: #5a5e60; */
+}
+.lgpoStyle-body::-webkit-scrollbar {
+  width: 9px;
+  background-color: rgb(0, 0, 0);
+}
+.lgpoStyle-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(54, 162, 235, .8);
+  transition: all .4s;
+}
+.lgpoStyle-body::-webkit-scrollbar-thumb:hover {
+  border-radius: 10px;
+  background-color: rgba(50, 200, 130, .8);
+  transition: all .4s;
+}
+.lgpoStyle-titulo{
+  margin-top: 10px;
+}
+.lgpoStyle-tituloComMarginLeft{
+  margin-left: 10px;
+}
+.height-badge{
+  height: 50%;
+}
+.lgpoStyle-botoesDeNavegacao{
+    border-style: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: white;
+    color: #5a5e60;
+    border-radius: 90px;
+    margin: 5px 5px 5px 5px; /* TOP RIGHT BOTTOM LEFT */
+    box-shadow: none;
+    transition: all .2s;
+}
+.lgpoStyle-botoesDeNavegacao:hover{
+    background-color: rgba(54, 162, 235, .8);
+    transition: all .2s;
+    color: white;
+    font-weight: bold;
+}
+.lgpoStyle-backgroundBadge:hover{
+    background-color: white;
+    transition: all .4s;
+    color: black;
+}
+.lgpoStyle-backgroundBadge{
+    transition: all .5s;
+}
+/* RIGHT CLICK*/
+.rightclickmenu { /* MENU RIGHT CLICK */
+    border: 3px solid rgb(8, 19, 38) ;
+    padding: 5px;
+    z-index: 9999;
+    position: absolute;
+    font: 11px sans-serif;
+    display: none;
+    background-color: rgb(8, 19, 38);
+    border-radius: 10px;
+    flex-direction: column;
+    list-style: none;
+}
+.rightclickobject{
+  width: 100%;
+  margin-right: 3px;
+}
+.lgpoStyle-rightClickMarginTop{
+  margin-top: 8px;
+}
+/* TREEVIEW */
+.lgpoStyle-colunaTreeviewBackground{
+  background-color: none;
+}
+
+.pDaTree{
+  margin-left: 0px;
+  padding: 5px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+.p2DaTree{
+  margin-left: 15px;
+  padding: 5px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+  font-size: 10px;
+}
+.p3DaTree{
+  margin-left: 30px;
+  padding: 5px;
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+  font-size: 10px;
+}
+.lgpoStyle-margin3px{
+  margin: 3px;
+}
+.height-seiscentos{
+  height: 600px;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+.height-seiscentos::-webkit-scrollbar {
+  width: 12px;
+  background:#e3e0d6;
+}
+.height-seiscentos::-webkit-scrollbar-thumb {
+  border-radius:10px;
+  background-color: rgba(54, 162, 235, .8);
+  transition: all .4s;
+}
+.height-seiscentos::-webkit-scrollbar-thumb:hover {
+  border-radius:10px;
+  background-color: rgba(50, 200, 130, .8);
+  transition: all .4s;
+}
+.lgpoStyle-iframeDashboard{
+  display: flex;
+justify-content: center;
+position: absolute;
+}
+.lgpoStyle-linhaDaTreeeviewEDaDashboard{
+  margin-top: 20px;
+  bottom: 0;
+}

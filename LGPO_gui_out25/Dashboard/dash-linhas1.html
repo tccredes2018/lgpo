@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>dash-linhas</title>
+	</head>
+	<body>
+		<canvas class="line-chart"></canvas>
+
+		<script type="text/javascript" src="Chart.min.js"></script>
+
+		<script>
+			// CTX = abreviação para ConTeXt, toda tag canvas deve ter um "contexto" que no caso do Chart.js é inserido por javascript
+			var ctx = document.getElementsByClassName("line-chart"); //pega todos os elementos que tem o nome line-chart (o que esta em canvas)
+			var chartGraph = new Chart(ctx, { // inicializando novo objeto de acordo com o contexto
+				type: 'line', // Type = Tipo de gráfico,
+
+				data: { //Data = Dados do Gráfico e Options = Configurações Globais
+					labels: ["4m","3m30s","3m","2m30s","2m","1m30s","1m","30s"], //Itens do eixo X
+
+						datasets: [ //dados co-relacionados a tabela
+							{
+								label: "Administração", //Legenda
+
+								data: [1,5,2,2,3,19,20,17], //Dados para cada item do eixo X
+
+								borderWidth: 5, //Largura da borda
+
+								borderColor: 'rgba(255,0,0,0.85)', //Cor da borda
+
+								backgroundColor: 'transparent', // Cor do fundo da forma
+							},
+							{
+								label: "Laboratório1", //Legenda
+
+								data: [7,3,9,1,2,5,8,9], //Dados para cada item do eixo X
+
+								borderWidth: 5, //Largura da borda
+
+								borderColor: 'rgba(0,255,0,0.85)', //Cor da borda
+
+								backgroundColor: 'transparent', // Cor do fundo da forma
+							},
+							{
+								label: "Laboratório2", //Legenda
+
+								data: [2,5,8,9,10,15,15,15], //Dados para cada item do eixo X
+
+								borderWidth: 5, //Largura da borda
+
+								borderColor: 'rgba(0,0,255,0.85)', //Cor da borda
+
+								backgroundColor: 'transparent', // Cor do fundo da forma
+							},
+						],
+					}
+				}
+			);
+		</script>
+	</body>
+</html>

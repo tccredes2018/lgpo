@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>dash-linhas</title>
+	</head>
+	<body>
+		<canvas id="chartjs-4" class="chartjs"></canvas>
+
+		<script type="text/javascript" src="Chart.min.js"></script>
+
+		<script>
+			new Chart(document.getElementById("chartjs-4"),
+			{"type":"doughnut","data":{
+				"labels":["Adm","RH","Secretaria","CPD","Lab1","Lab2","Lab3","Lab4","Lab5","Lab6"],
+				"datasets":[{
+					"label":"Dataset Units Organizationals",
+					"data":[3,2,4,3,17,0,19,20,13,20],
+					"backgroundColor":["rgb(255, 99, 132)","rgb(54, 162, 235)","rgb(255, 205, 86)","rgb(0,255,0)","Grey","Red","Purple","Black","Orange","Brown",]
+				}]}});
+		</script>
+	</body>
+</html>

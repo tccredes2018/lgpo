@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>dash-linhas</title>
+	</head>
+	<body>
+		<canvas class="line-chart"></canvas>
+
+		<script type="text/javascript" src="Chart.min.js"></script>
+
+		<script>
+			// CTX = abreviação para ConTeXt, toda tag canvas deve ter um "contexto" que no caso do Chart.js é inserido por javascript
+			var ctx = document.getElementsByClassName("line-chart"); //pega todos os elementos que tem o nome line-chart (o que esta em canvas)
+			var chartGraph = new Chart(ctx, { // inicializando novo objeto de acordo com o contexto
+				type: 'bar', // Type = Tipo de gráfico,
+
+				data: { //Data = Dados do Gráfico e Options = Configurações Globais
+					labels: ["Usuários ativos agora"], //Itens do eixo X
+
+						datasets: [ //dados co-relacionados a tabela
+							{
+								label: "Administração", //Legenda
+
+								data: [3], //Dados para cada item do eixo X
+
+								backgroundColor: "rgb(255, 99, 132)", // Cor do fundo da forma
+							},
+							{
+								label: "Laboratório1", //Legenda
+
+								data: [19], //Dados para cada item do eixo X
+
+								backgroundColor: "rgb(54, 162, 235)", // Cor do fundo da forma
+							},
+							{
+								label: "Laboratório2", //Legenda
+
+								data: [15], //Dados para cada item do eixo X
+
+								backgroundColor: "rgb(255, 205, 86)", // Cor do fundo da forma
+							},
+						],
+					}
+				}
+			);
+		</script>
+	</body>
+</html>
